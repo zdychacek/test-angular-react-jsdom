@@ -1,0 +1,34 @@
+{
+  "name": "test-angular-react-jsdom",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "NODE_PATH=./ mocha --watch setup.js src/**/*.spec.js",
+    "lint": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.4.1",
+    "babel-eslint": "^7.0.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.4.3",
+    "chai": "^3.5.0",
+    "enzyme": "^2.5.1",
+    "eslint": "^3.8.1",
+    "eslint-plugin-babel": "^3.3.0",
+    "eslint-plugin-mocha": "^4.7.0",
+    "eslint-plugin-react": "^6.4.1",
+    "jsdom": "^8.0.1",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.10",
+    "react-addons-test-utils": "^15.3.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "main": "setup.js",
+  "description": ""
+}
