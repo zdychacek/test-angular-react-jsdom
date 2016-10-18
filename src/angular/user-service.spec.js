@@ -1,7 +1,5 @@
 import './user-service';
 
-const { module: ngModule, inject } = angular.mock;
-
 const MOCK_USER = { username: 'riku' };
 const MOCK_USERS = [ { id: 1 }, { id: 2 } ];
 

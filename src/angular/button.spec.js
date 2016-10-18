@@ -1,7 +1,5 @@
 import './button';
 
-const { module: ngModule, inject } = angular.mock;
-
 describe('Button directive (Angular)', function () {
 	beforeEach(ngModule('directives.button'));
 

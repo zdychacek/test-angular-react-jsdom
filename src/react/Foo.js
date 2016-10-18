@@ -1,8 +1,6 @@
 import React from 'react';
 import { hello } from '../utils';
 
-console.log(hello('world'));
-
 class Foo extends React.Component {
 	constructor (props) {
 		super(props);
@@ -10,12 +8,11 @@ class Foo extends React.Component {
 
 	render () {
 		return (
-			<div className="foo" />
+			<div className="foo">
+				{hello('world')}
+			</div>
 		);
 	}
 }
-
-Foo.propTypes = {};
-Foo.defaultProps = {};
 
 export default Foo;

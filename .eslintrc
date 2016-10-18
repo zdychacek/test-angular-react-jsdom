@@ -13,7 +13,9 @@
 	],
 	"globals": {
 		"angular": true,
-		"expect": true
+		"expect": true,
+		"inject": true,
+		"ngModule": true
 	},
 	"rules": {
 		// ES6

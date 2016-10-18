@@ -1,7 +1,5 @@
 import './sidebar';
 
-const { module: ngModule, inject } = angular.mock;
-
 describe('Sidebar directive (Angular)', () => {
 	beforeEach(ngModule('directives.sidebar'));
 

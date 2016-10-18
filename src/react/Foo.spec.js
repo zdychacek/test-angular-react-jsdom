@@ -16,7 +16,7 @@ describe('Foo component (React)', function () {
 	});
 
 	it('contains spec with an expectation', () => {
-		expect(shallow(<Foo />).contains(<div className='foo' />)).to.equal(true);
+		expect(shallow(<Foo />).contains(<div className='foo'>Hi world!</div>)).to.equal(true);
 	});
 
 	it('contains spec with an expectation', () => {

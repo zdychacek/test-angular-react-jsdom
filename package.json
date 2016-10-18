@@ -2,7 +2,7 @@
   "name": "test-angular-react-jsdom",
   "version": "1.0.0",
   "scripts": {
-    "test": "NODE_PATH=./ mocha --watch setup.js src/**/*.spec.js",
+    "test": "NODE_PATH=./ mocha --watch --compilers js:babel-register src/setup.js src/**/*.spec.js",
     "lint": "eslint src"
   },
   "author": "",

@@ -1,14 +1,10 @@
-require('babel-register')();
-
 const { jsdom } = require('jsdom');
 const { expect } = require('chai');
 
 const document = global.document = jsdom();
 const window = global.window = document.defaultView;
 
-global.navigator = window.navigator = {
-	userAgent: 'node.js'
-};
+global.navigator = window.navigator = { userAgent: 'node.js' };
 global.Node = window.Node;
 
 window.mocha = {};
@@ -27,3 +23,5 @@ require('angular/angular');
 require('angular-mocks');
 
 global.angular = window.angular;
+global.inject = global.angular.mock.inject;
+global.ngModule = global.angular.mock.module;
